@@ -196,7 +196,7 @@ export default function Home() {
                   Register your account and set up your professional trainer profile.
                 </p>
                 <Image
-                  src="/images/trainer-profile.png"
+                  src="/images/profile.jpg"
                   alt="Trainer profile setup interface"
                   width={300}
                   height={200}
@@ -215,7 +215,7 @@ export default function Home() {
                   Invite your existing clients through email or share your profile link to attract new clients. Manage your existing clients with our comprehensive client management tools, scheduling system, and communication features.
                 </p>
                 <Image
-                  src="/images/community-fitness.png"
+                  src="/images/New User.png"
                   alt="Trainer connecting with clients"
                   width={300}
                   height={200}
@@ -235,7 +235,7 @@ export default function Home() {
                   personal training business to new heights with data-driven insights.
                 </p>
                 <Image
-                  src="/images/business-growth.png"
+                  src="/images/graph.png"
                   alt="Business growth analytics for trainers"
                   width={300}
                   height={200}
@@ -252,8 +252,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">Ready to Transform Your Business?</h2>
           <p className="text-xl text-gray-300 mb-8">
-            Join thousands of personal trainers and fitness coaches who are already growing their business with Best
-            Rep. Start your journey to a more successful, organized, and profitable training career today.
+            Start your journey to a more successful, organized, and profitable training career today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="https://app.bestrep.co.za/register" target="_blank" rel="noopener noreferrer">
@@ -326,13 +325,13 @@ export default function Home() {
                     Contact Us
                   </a>
                 </li>
-                <li>
+                {/*<li>
                   <a href="#" className="hover:text-white">
                     Trainer Community
                   </a>
-                </li>
+                </li>*/}
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a href="https://blog.bestrep.co.za" className="hover:text-white">
                     Training Resources
                   </a>
                 </li>
@@ -347,17 +346,17 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a href="https://blog.bestrep.co.za" className="hover:text-white">
                     Blog
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#" className="hover:text-white">
                     Careers
                   </a>
-                </li>
+                </li>*/}
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a href="https://app.bestrep.co.za/privacy-policy" className="hover:text-white">
                     Privacy
                   </a>
                 </li>
