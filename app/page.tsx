@@ -250,7 +250,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 bg-gray-900">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Ready to Transform Your Training Business?</h2>
+          <h2 className="text-4xl font-bold text-white mb-6">Ready to Transform Your Business?</h2>
           <p className="text-xl text-gray-300 mb-8">
             Join thousands of personal trainers and fitness coaches who are already growing their business with Best
             Rep. Start your journey to a more successful, organized, and profitable training career today.
