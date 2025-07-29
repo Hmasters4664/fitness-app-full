@@ -23,16 +23,16 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="relative h-8 w-8 bg-orange-500 rounded-full flex items-center justify-center p-1.5">
-              <Image
-                src="/images/best-rep-logo.png"
-                alt="Best Rep Logo"
-                width={20}
-                height={20}
-                className="object-contain"
-              />
-            </div>
-            <span className="text-xl font-bold text-gray-900">Best Rep</span>
+
+            <Image
+              src="/images/best-rep-logo.png"
+              alt="Best Rep Logo"
+              width={50}
+              height={50}
+              className="object-contain"
+            />
+
+            <span className="text-xl font-bold text-gray-900">BestRep</span>
           </div>
 
           {/* Desktop Navigation */}

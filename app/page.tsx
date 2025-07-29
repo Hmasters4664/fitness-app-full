@@ -2,8 +2,11 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Navigation from "@/components/navigation"
+import Link from "next/dist/client/link"
+
 
 export default function Home() {
+
   return (
     <div className="min-h-screen">
       {/* Navigation */}
@@ -12,8 +15,8 @@ export default function Home() {
       {/* Hero Section */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
+          <div className="grid md:grid-cols-5 gap-16 items-center">
+            <div className="md:col-span-2">
               <h2 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight text-gray-900">
                 Elevate Your Training Business
               </h2>
@@ -24,39 +27,36 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3">
-                  Start Your Journey
-                </Button>
-                <Button
+                <Link href="https://app.bestrep.co.za/register" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3">
+                    Start Your Journey
+                  </Button>
+                </Link>
+                {/*<Button
                   size="lg"
                   variant="outline"
                   className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-3 bg-transparent"
                 >
                   Watch Demo
-                </Button>
+                </Button>*/}
               </div>
             </div>
 
-            <div className="relative">
-              <div className="bg-gray-200 rounded-lg shadow-xl p-8 min-h-[400px] flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <div className="w-16 h-16 bg-gray-300 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                    <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        fillRule="evenodd"
-                        d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <p className="text-sm">App Screenshots</p>
-                  <p className="text-xs mt-1">Place your app images here</p>
-                </div>
-              </div>
+            <div className="relative md:col-span-3">
+
+              <Image
+                src="images/hero2.png"
+                alt="Best Rep fitness app interface showing dashboard, workout tracking, and client management"
+                width={1500}
+                height={800}
+                className="object-cover w-full h-full"
+              />
+
             </div>
           </div>
         </div>
       </section>
+
 
       {/* Features Section */}
       <section id="features" className="py-20 bg-gray-50">
@@ -80,8 +80,7 @@ export default function Home() {
                   <div>
                     <h4 className="text-xl font-semibold text-gray-900 mb-2">Centralized Client Dashboard</h4>
                     <p className="text-gray-600">
-                      Keep track of all your clients, their progress, workout plans, nutrition goals, and payment
-                      history in one centralized dashboard. Never lose track of important client information again.
+                      Keep track of all your clients, their progress, workout plans, fitness goals, and more in one centralized dashboard. Never lose track of important client information again.
                     </p>
                   </div>
                 </div>
@@ -92,7 +91,7 @@ export default function Home() {
                   <div>
                     <h4 className="text-xl font-semibold text-gray-900 mb-2">Progress Tracking & Analytics</h4>
                     <p className="text-gray-600">
-                      Monitor your clients' fitness journey with detailed progress tracking, body composition analysis,
+                      Monitor your clients' fitness journey with detailed progress tracking,
                       and performance metrics that help you adjust training programs for optimal results.
                     </p>
                   </div>
@@ -104,7 +103,7 @@ export default function Home() {
                   <div>
                     <h4 className="text-xl font-semibold text-gray-900 mb-2">Custom Workout Builder</h4>
                     <p className="text-gray-600">
-                      Create personalized workout plans with our extensive exercise library, video demonstrations, and
+                      Create personalized workout plans and
                       customizable templates that save you hours of planning time.
                     </p>
                   </div>
@@ -113,10 +112,10 @@ export default function Home() {
             </div>
             <div className="relative">
               <Image
-                src="/images/trainer-client.png"
+                src="/images/client_section.png"
                 alt="Personal trainer working with client using app"
-                width={600}
-                height={400}
+                width={1200}
+                height={800}
                 className="rounded-lg shadow-xl"
               />
             </div>
@@ -125,10 +124,10 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="order-2 md:order-1 relative">
               <Image
-                src="/images/analytics-dashboard.png"
+                src="/images/Elevate.png"
                 alt="Professional trainer profile and program creation interface"
-                width={600}
-                height={400}
+                width={1200}
+                height={800}
                 className="rounded-lg shadow-xl"
               />
             </div>
@@ -142,8 +141,7 @@ export default function Home() {
                   <div>
                     <h4 className="text-xl font-semibold text-gray-900 mb-2">Effortless Scheduling System</h4>
                     <p className="text-gray-600">
-                      Save hours every week with automated scheduling that handles bookings, cancellations, and
-                      rescheduling. Your clients can book sessions 24/7 while you focus on training, not admin work.
+                      Save hours every week with automated scheduling that handles bookings, and cancellations, No mo excel spreadsheets or manual tracking required.
                     </p>
                   </div>
                 </div>
@@ -155,7 +153,7 @@ export default function Home() {
                     <h4 className="text-xl font-semibold text-gray-900 mb-2">Professional Program Creation</h4>
                     <p className="text-gray-600">
                       Create stunning, professional workout programs and training plans that showcase your expertise.
-                      Impress clients with detailed, customized programs that demonstrate your value as a trainer.
+                      and Assign them to clients with just a few clicks. Impress clients with detailed, customized programs that demonstrate your value as a trainer.
                     </p>
                   </div>
                 </div>
@@ -195,8 +193,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Create Your Profile</h3>
                 <p className="text-gray-600 mb-6">
-                  Set up your professional trainer profile with certifications, specialties, and experience. Our
-                  onboarding process takes less than 10 minutes and helps you stand out to potential clients.
+                  Register your account and set up your professional trainer profile.
                 </p>
                 <Image
                   src="/images/trainer-profile.png"
@@ -215,8 +212,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Connect with Clients</h3>
                 <p className="text-gray-600 mb-6">
-                  Start attracting clients through our platform while managing existing ones with our comprehensive
-                  client management tools, scheduling system, and communication features.
+                  Invite your existing clients through email or share your profile link to attract new clients. Manage your existing clients with our comprehensive client management tools, scheduling system, and communication features.
                 </p>
                 <Image
                   src="/images/community-fitness.png"
@@ -260,18 +256,13 @@ export default function Home() {
             Rep. Start your journey to a more successful, organized, and profitable training career today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-12 py-4 text-lg">
-              Start Your Free Trial
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-black px-12 py-4 text-lg bg-transparent"
-            >
-              Schedule a Demo
-            </Button>
+            <Link href="https://app.bestrep.co.za/register" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-12 py-4 text-lg">
+                Start Your Free Trial
+              </Button>
+            </Link>
           </div>
-          <p className="text-gray-400 mt-6">No credit card required • 14-day free trial • Cancel anytime</p>
+          <p className="text-gray-400 mt-6">No credit card required • 30-day free trial • Cancel anytime</p>
         </div>
       </section>
 

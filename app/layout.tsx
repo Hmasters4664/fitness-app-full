@@ -8,8 +8,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Best Rep - Fitness Platform for Trainers and Gyms",
-  description: "The ultimate platform connecting personal trainers and gym owners",
-    generator: 'v0.dev'
+  description: "The ultimate platform for personal trainers and gyms to manage their clients, workouts, and workout plans."
 }
 
 export default function RootLayout({
